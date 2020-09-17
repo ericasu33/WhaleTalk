@@ -1,2 +1,2 @@
 # WhaleTalk
-codecademy with a twist
+Codecademy - with some twist
