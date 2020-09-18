@@ -3,7 +3,7 @@ const getUserInput = () => {
   input = input.toLowerCase(); // convert input to lower case
   
   var regex = /[0-9]/;  //console.log(/[0-9]/.test(input))
-  if (regex.test(input)) {
+  if (input.match(regex)) { //or regex.test(input)
       console.log("Please input letters only.");
       return getUserInput(); //calls the function again
   } else {
@@ -25,7 +25,6 @@ const convertInput = (input) => {
         // console.log(resultArray);
       }
     }
-
   if (input[i] === "e" || input[i] === "u") {
     resultArray.push(input[i]);
     // console.log("the letter is an e or u, adds itself to the array: " + resultArray);
